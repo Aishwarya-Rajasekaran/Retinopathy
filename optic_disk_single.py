@@ -11,16 +11,11 @@ def optic_disk_extraction(image):
 	gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 	minVal, maxVal, minLoc, maxLoc = cv2.minMaxLoc(gray)
 	(a,b)= maxLoc
-	vertex1 = (a-60,b+60)
-   	vertex2 = (a+60,b-60)	
+	vertex1 = (a-70,b+70)
+   	vertex2 = (a+70,b-70)	
 	cv2.rectangle(image, vertex1, vertex2, 2)
 	#cv2.imshow("marker",image)
 	return image
-
-
-
-
-
 
 if __name__ == '__main__':
 	fundus1=cv2.imread("original.JPG")
