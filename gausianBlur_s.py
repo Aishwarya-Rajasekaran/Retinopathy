@@ -16,10 +16,7 @@ def scaleRadius(img , scale):
 scale=350
 count = 0
 for f in glob(os.path.join(SOURCE_IMAGES,"*.JPG")):
-
-    
-    a=cv2.imread(f)
-    #print(a)
+    a=cv2.imread(f)   
     
     #scale image to a given radius
     a=scaleRadius(a,scale)
