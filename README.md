@@ -1,4 +1,4 @@
 # Retinopathy
 
-Input: Fundus image
-Output: Classify as normal or abnormal
+Classifcation of retinal images as normal and abnormal using CNN.
+
